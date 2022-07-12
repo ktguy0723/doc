@@ -203,7 +203,38 @@
    $ git st
    ```
 
-   
+
+
+
+**備考：gitconfigについて**
+
+gitconfigの設定には３つの段階がある。有効優先度は①、②、③の順である。
+
+① local: .git/config に設定
+② global : ~/.gitconifgに設定
+③ system : gitインストールディレクトリのgitconfigファイルに設定
+
+それぞれ、下記のように設定・参照が可能
+
+```bash
+# local
+$ git config --local user.name "My Name"
+$ git config --local --list
+
+# global
+$ git config --global user.name "My Name"
+$ git config --global --list
+
+# system
+$ git config --system user.name "My Name"
+$ git config --system --list
+```
+
+参考：https://qiita.com/shionit/items/fb4a1a30538f8d335b35
+
+
+
+
 
 ## 4. リモートリポジトリ方針
 
