@@ -1,0 +1,35 @@
+# Compiled Python files コンパイル済Pythonファイル
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+
+# Virtual environment 仮想環境
+.venv/
+env/
+
+# IDE specific files IDE固有ファイル
+.vscode/
+.idea/
+
+# Logs ログ
+*.log
+
+# Environment variables 環境変数ファイル
+.env
+
+# Dependency directories 依存関係のディレクトリ
+node_modules/
+bower_components/
+
+# Distribution / packaging ディストリビューションやパッケージングに関連するファイル
+dist/
+build/
+*.egg-info/
+*.egg
+*.whl
+
+# Miscellaneous その他の一般的な不要なファイル
+*.bak
+*.swp
+.DS_Store
