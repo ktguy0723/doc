@@ -38,12 +38,12 @@ Pythonの拡張機能をインストール
 
 6. プロジェクトの構成
 プロジェクトのフォルダに、以下のファイルとフォルダを作成。
-- main.py：AWS LambdaにアップロードするPythonスクリプト
+- src/main.py：AWS LambdaにアップロードするPythonスクリプト
 - tests/：UnitTestを格納するフォルダ
 - requirements.txt：依存パッケージを格納するファイル
 
 7. main.pyの作成
-/project/main.py を参照
+/project/src/main.py を参照
 
 8. UnitTestの作成
 /project/tests/test_main.py を参照
@@ -52,9 +52,9 @@ Pythonの拡張機能をインストール
 9. カバレッジの測定
 以下のコマンドを使用して、pytest-covを使用してカバレッジを測定。
 ```bash
-$ pytest --cov=main tests/
-$ pytest --cov=main --no-cov-on-fail tests/ # 上記で実行しない場合
-$ pytest --cov=main --cov-report=html --no-cov-on-fail tests/ # レポート出力したい場合
+$ pytest --cov=src.main tests/
+$ pytest --cov=src.main --no-cov-on-fail tests/ # 上記で実行しない場合
+$ pytest --cov=src.main --cov-report=html --no-cov-on-fail tests/ # レポート出力したい場合
 ```
 
 10. AWS Lambdaへのデプロイ
@@ -62,7 +62,7 @@ $ pytest --cov=main --cov-report=html --no-cov-on-fail tests/ # レポート出�
 - ランタイムにPython 3.xを選択し、アップロードするファイルにmain.pyを指定
 - 依存パッケージをインストールするために、requirements.txtをアップロード
 
-TODO: AWS Lambda　CLIからのデプロイ
+「AWSCLIを使ったLambdaリリース手順書.md」参照
 
 11. 仮想環境を抜ける
 ```bash

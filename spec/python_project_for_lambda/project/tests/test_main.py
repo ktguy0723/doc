@@ -1,4 +1,4 @@
-import main
+import src.main as main
 
 def test_lambda_handler():
     response = main.lambda_handler(None, None)

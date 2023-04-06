@@ -32,4 +32,5 @@ build/
 # Miscellaneous その他の一般的な不要なファイル
 *.bak
 *.swp
+*.zip
 .DS_Store
