@@ -429,13 +429,13 @@ $ git checkout -- . #ワークツリーの変更は自動で行われないの�
 $ git reset --hard HEAD~
 ```
 
-### 8.3. コミットメッセージを修正したい。      
+### 8.4. コミットメッセージを修正したい。      
 ```bash
 $ git add . #ステージングした後に実行
 $ git commit --amend -m "コミットメッセージ"
 ```
 
-### 8.4. 作業中に別作業の依頼が来てしまった。退避して別作業を実施する。
+### 8.5. 作業中に別作業の依頼が来てしまった。退避して別作業を実施する。
 ```bash
 $ git stash -u # 作業中の内容を根こそぎ退避
 $ git checkout -b other-branch # 別のブランチを切って別の作業をこなす
@@ -445,5 +445,12 @@ $ git commit -m "コミットメッセージ"
 $ git checkout origin-branch # 元のブランチに戻る
 $ git stash pop # 退避していた作業内容を取り出す
 ```
+
+### 8.6. 特定のコミットまで戻して、作業をやり直したい
+```bash
+$ git checkout <コミットID>
+$ git checkout -b new-branch # 別のブランチを作成
+```
+
 > 参考になるQiita
 > https://qiita.com/muran001/items/dea2bbbaea1260098051
