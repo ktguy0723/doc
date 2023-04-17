@@ -192,7 +192,7 @@
 
       ```bash
       $ git add . #ステージングした後に実行
-      $ git commit --amend 
+      $ git commit --amend
       ```
 
 5. オプション
@@ -405,3 +405,45 @@ $ git stash drop stash@{1}
 $ git stash clear #全作業を削除
 ```
 
+## 8. Gitセーフティーネット
+
+### 8.1. 間違って編集してしまった。`add`はしていないが、直前のコミットに戻したい。
+```bash
+$ git checkout -- <ファイル名>
+$ git checkout -- <ディレクトリ名>
+$ git checkout -- . #全変更の取り消し
+```
+### 8.2. 間違って`add`してしまった。`commit`はしていないが、直前のコミットに戻したい。
+`HEAD`は最新のコミットを意味する。最新のコミットで上書きするイメージ
+```bash
+$ git reset HEAD <ファイル名>
+$ git reset HEAD <ディレクトリ名>
+$ git reset HEAD .
+
+$ git checkout -- . #ワークツリーの変更は自動で行われないので、コマンドを実行する必要がある
+```
+
+### 8.3. 間違って`commit`してしまった。`push`はしていないが、直前のコミットに戻したい。
+```bash
+# masterのHEAD、インデックス、ワーキングツリー全てを１つまえに戻す
+$ git reset --hard HEAD~
+```
+
+### 8.3. コミットメッセージを修正したい。      
+```bash
+$ git add . #ステージングした後に実行
+$ git commit --amend -m "コミットメッセージ"
+```
+
+### 8.4. 作業中に別作業の依頼が来てしまった。退避して別作業を実施する。
+```bash
+$ git stash -u # 作業中の内容を根こそぎ退避
+$ git checkout -b other-branch # 別のブランチを切って別の作業をこなす
+# 作業
+$ git add <必要なファイル>
+$ git commit -m "コミットメッセージ"
+$ git checkout origin-branch # 元のブランチに戻る
+$ git stash pop # 退避していた作業内容を取り出す
+```
+> 参考になるQiita
+> https://qiita.com/muran001/items/dea2bbbaea1260098051
