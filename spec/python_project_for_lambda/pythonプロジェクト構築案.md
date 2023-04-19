@@ -42,6 +42,17 @@ Pythonの拡張機能をインストール
 - tests/：UnitTestを格納するフォルダ
 - requirements.txt：依存パッケージを格納するファイル
 
+<details><summary>requirement.txtについて</summary>
+
+```
+$ pip freeze > requirements.txt # プロジェクトの依存関係を出力
+$ pip install -r requirements.txt # requirement.txtに記載されたパッケージをインストール
+```
+参考：https://qiita.com/sakusaku12/items/21083c73c8afa4f6c78d
+</details>
+
+
+
 7. main.pyの作成
 /project/src/main.py を参照
 
