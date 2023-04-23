@@ -53,12 +53,16 @@ $ pip install -r requirements.txt # requirement.txtに記載されたパッケ�
 
 
 
-7. main.pyの作成
+7. main.pyの作成  
 /project/src/main.py を参照
 
-8. UnitTestの作成
-/project/tests/test_main.py を参照
-注意：`__init__.py`も作ること
+8. UnitTestの作成  
+/project/tests/test_main.py を参照  
+> 注意：/project/tests/直下に、`__init__.py`も作ること  
+
+[View] -> [Command Palette] or `ctrl + shift + P`を開き、">Python: Configure Tests"と入力し、Pytest > . を選択  
+サイドバーの"testing"を選択するとテストツールが開く  
+
 
 9. カバレッジの測定
 以下のコマンドを使用して、pytest-covを使用してカバレッジを測定。
