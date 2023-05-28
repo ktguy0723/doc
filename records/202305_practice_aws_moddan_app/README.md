@@ -20,6 +20,10 @@ https://blog.serverworks.co.jp/2023/01/05/091657
 3. Athena で AWS Glue を使用するときのベストプラクティス
 https://docs.aws.amazon.com/ja_jp/athena/latest/ug/glue-best-practices.html
 
+### Glue
+1. Glueの基礎
+https://dev.classmethod.jp/articles/re-introduction-2022-aws-glue/
+
 
 ## Tips
 ### Athena
