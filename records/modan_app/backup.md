@@ -42,3 +42,9 @@
 
 > AWS Backupで一定期間まで戻してバージョニングで適切なバージョンに戻す運用か？
 > ライフサイクルはデータ復元というより、コスト最適化が目的のようだ
+
+## 4. バックアップ具体的実装方法＆Tips
+- 設定方法（タグを使って管理する）
+https://blog.serverworks.co.jp/tech/2019/07/30/aws-backup/
+- AWS バックアップの削除方法
+https://dev.classmethod.jp/articles/aws-backup-amazon-fsx-netapp-ontap-set-services-centralized-data-protection/#toc-9
