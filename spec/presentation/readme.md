@@ -1,1 +1,6 @@
-![](./work.drawio.svg)
+## 伝え方の全体像
+![文章全体](./all.drawio.svg)
+
+## 事例別ケーススタディ
+### とっさに意見を求められて頭が真っ白になる
+![case1](./case1.drawio.svg)
