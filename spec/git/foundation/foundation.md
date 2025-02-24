@@ -1,4 +1,4 @@
-## GitとGithub　(２２％)
+## 1. GitとGithub　(２２％)
 ### Git and GitHub Basic
 - バージョンコントロールシステム
   - Centralized VCS
@@ -37,7 +37,7 @@
 - GitHub Desktop
 - GitHub Mobile 
 
-## GitHubリポジトリの操作　(８％)
+## 2.GitHubリポジトリの操作　(８％)
 - リポジトリで推奨されるファイル
   - README.md
   - FUNDING.yml
@@ -59,104 +59,109 @@
 - README表示の参照順
   - .github > ルート > /docs
 
-## 共同作業機能 (30%)
-- Issues(問題)
-  - タスク
+## 3.共同作業機能 (30%)
+### Issues(問題)
+- GitHubにおける「タスク」を表す
+- 機能
   - フィルタによる絞り込み
-  - '#'によるリンク
+  - '#'によるリンクづけ
   - 担当者の割り当て
-  - ブランチの作成
-  - Issueの管理
-    - オープン、クローズ（Close as Complete, Close as not planned）
-    - ピン留め
-    - 重複としてマーク（なぜクローズしたかわかるように、同件はマークしてクローズする）
-      - Duplicate of #xx
-    - 別のリポジトリに転送
-    - 削除
-  - Issue Templates
-    - 記載内容を強制することはできない
-    - `.github/ISSUE_TEMPLATE/**` に格納される
-    - `.md` がサポートされた拡張子
-  - Issue Forms
-    - 書く内容を強制する
-    - `.github/ISSUE_TEMPLATE/**` に格納される
-    - `.yml` がサポートされた拡張子
+  - ブランチの作成や紐付け
 
-- Pull requests
-  - Reviewers、Assignees
-  - ベースブランチ、比較ブランチ
-  - プルリクエストかドラフトを作成
-  - Conversation, Commits, Checks, Files changed
+- Issueの管理
   - ステータス
-    - マージしてクローズ：ReOpenができない
-    - マージせずクローズ：ReOpenができる
-    - ドラフト：マージやレビューができない
     - オープン
-  - Pull Requestテンプレート
-    - ルートディレクトリ、`/docs`、`.github/` に格納される
-    - pull_request_template.md ファイル名はこれでないといけない
-    - 上記格納場所のいずれかに、PULL_REQUEST_TEMPLATEディレクトリを作成しその配下に配置する
-  - キーワード
-    - これらのキーワードにつづけてIssueのリンクを記述すると、PullRequestがCloseした時に連動してIssueもCloseする
-    - close #xx
-    - closes #xx
-    - closed #xx
-    - fix #xx
-    - fixes #xx
-    - fixed #xx
-    - resolve #xx
-    - resolves #xx
-    - resolved #xx
-  - レビュー
-    - Add single comment: コメント単独で投稿
-    - Start a review: 複数コメントを保留しておき、まとめて投稿
-  - CODEOWNERSによるReviewersの指定
-    - ルート/CODEOWNERS
-    - CODEOWNERSで指定されたユーザがReviewersとして自動的に指定される
-  - 変更の提案（suggested changes）
-    - コメントでコードの提案を記法に従い入力する
+    - クローズ（Close as Complete, Close as not planned, Close as duplicated）
+  - ピン留め: Issueページの先頭に表示される
+  - 重複としてマーク（なぜクローズしたかわかるように、同件はマークしてクローズする）
+    - Duplicate of #xx
+  - 別のリポジトリに転送
+  - 削除
+- Issue Templates
+  - 記載内容を強制することはできない
+  - `.github/ISSUE_TEMPLATE/**` に格納される
+  - `.md` がサポートされた拡張子
+- Issue Forms
+  - 書く内容を強制する
+  - `.github/ISSUE_TEMPLATE/**` に格納される
+  - `.yml` がサポートされた拡張子
+
+### Pull requests
+- Reviewers、Assignees
+- ベースブランチ、比較ブランチ
+- プルリクエストかドラフトを作成
+- Conversation, Commits, Checks, Files changed
+- ステータス
+  - マージしてクローズ：ReOpenができない
+  - マージせずクローズ：ReOpenができる
+  - ドラフト：マージやレビューができない
+  - オープン
+- Pull Requestテンプレート
+  - ルートディレクトリ、`/docs`、`.github/` に格納される
+  - pull_request_template.md ファイル名はこれでないといけない
+  - 上記格納場所のいずれかに、PULL_REQUEST_TEMPLATEディレクトリを作成しその配下に配置する
+- キーワード
+  - これらのキーワードにつづけてIssueのリンクを記述すると、PullRequestがCloseした時に連動してIssueもCloseする
+  - close #xx
+  - closes #xx
+  - closed #xx
+  - fix #xx
+  - fixes #xx
+  - fixed #xx
+  - resolve #xx
+  - resolves #xx
+  - resolved #xx
+- レビュー
+  - Add single comment: コメント単独で投稿
+  - Start a review: 複数コメントを保留しておき、まとめて投稿
+- CODEOWNERSによるReviewersの指定
+  - ルート/CODEOWNERS
+  - CODEOWNERSで指定されたユーザがReviewersとして自動的に指定される
+- 変更の提案（suggested changes）
+  - コメントでコードの提案を記法に従い入力する
 ```
     ```suggestion
     # Sample repos
     ```
 ```
-  - レビューによるステータス
-    - comment: 単にコメント（ステータスは変わらない）
-    - approve: 承認する
-    - request change: 変更を要求
+- レビューによるステータス
+  - comment: 単にコメント（ステータスは変わらない）
+  - approve: 承認する
+  - request change: 変更を要求
 
-- Discussions
-  - 初期で用意されているカテゴリ
-    - Announcements: お知らせ
-    - General: 全般
-    - Ideas: アイデア
-    - Polls: コミュニティから投票を受ける
-    - Q&A: 質疑応答
-    - Show and tell: 知見共有
-  - DisscussionからIssueを作成したり、ピン留めしたりできる
+### Discussions
+- 初期で用意されているカテゴリ
+  - Announcements: お知らせ
+  - General: 全般
+  - Ideas: アイデア
+  - Polls: コミュニティから投票を受ける
+  - Q&A: 質疑応答
+  - Show and tell: 知見共有
+- DisscussionからIssueを作成したり、ピン留めしたりできる
 
 - Issues, Pull Request, Discussionsの違い
   - Discussions：議論や質疑応答、アイデアのフィードバックなどで利用。Issueを起こす前段階で用いる
   - Issues：タスク管理。Pull RequestやProjectsと組み合わせて複雑なタスク管理ができる
   - Pull Request：変更内容のレビュー
 
-- Notifications
-  - リポジトリごと、ユーザごとに通知の設定ができる
+### Notifications
+- リポジトリごと、ユーザごとに通知の設定ができる
 
-- Gits
-  - コードスペニットを他の人と共有する簡単な方法
-  - Gitリポジトリである
-  - パブリック、シークレットに設定可能
-    - シークレットであっても検索した際に引っかからないだけでURLを共有すれば参照できる
-    - パブリックからシークレットへの変更はできない
+### Gits
+- コードスペニットを他の人と共有する簡単な方法
+- Gitリポジトリである
+- パブリック、シークレットに設定可能
+  - シークレットであっても検索した際に引っかからないだけでURLを共有すれば参照できる
+  - パブリックからシークレットへの変更はできない
 
-- Wiki
-  - リポジトリへの書き込みアクセス権を持つユーザは、WIKIが編集可能
+### Wiki
+- リポジトリへの書き込みアクセス権を持つユーザは、WIKIが編集可能
 
-- GitHub Pages
-  - 静的サイトホスティングサービス
+### GitHub Pages
+- 静的サイトホスティングサービス
 
-## モダンな開発 (13%)
+
+## 4. モダンな開発 (13%)
 - GitHub Action
   - 自動化されたワークフロー
   - CICDやAPIの呼び出しができる
