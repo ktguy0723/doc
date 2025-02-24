@@ -213,59 +213,59 @@ jobs:
       - ターミナルアクセス不可能
       - 拡張機能が少しだけ
 
-## プロジェクト管理 (7%)
-- GitHub Project
-  - IssueやPull requests をインポートしてタスク管理ができる
-  - 3種のレイアウトでさまざまな表示が可能
-    - テーブル形式
-    - カンバン形式（ボード形式）
-    - ロードマップ形式
-  - Projectsのアクセス管理ができる
-  - Label：分類するために使う
-  - Milestones：進行状況の追跡に使う
-  - Projectのテンプレートも作成可能
-  - 返信テンプレート
-    - IssueやPull requestに返信するテンプレートを自薦に作成しておくことができる
-  - Projectsワークフロー
-  - Projectsインサイト
+## 5. プロジェクト管理 (7%)
+### GitHub Project
+- IssueやPull requests をインポートしてタスク管理ができる
+- 3種のレイアウトでさまざまな表示が可能
+  - テーブル形式
+  - カンバン形式（ボード形式）
+  - ロードマップ形式
+- Projectsのアクセス管理ができる
+- Label：分類するために使う
+- Milestones：進行状況の追跡に使う
+- Projectのテンプレートも作成可能
+- 返信テンプレート
+  - IssueやPull requestに返信するテンプレートを自薦に作成しておくことができる
+- Projectsワークフロー
+- Projectsインサイト
 
-## プライバシー、セキュリティ、および管理 (10%)
-- 2FA Authentication
-  - モバイルやデスクトップ、テキストメッセージで二要素認証の設定ができる
-- GitHub Enterprise Managed Users
-  - ユーザはIDPで管理されるアカウント
-- GitHub Administration
-  - リポジトリのロール：Organizationの機能
-    - Read
-    - Triage
-    - Write
-    - Maintain
-    - Admin
-  - リポジトリの可視性
-    - Public
-    - Internal
-    - Private
-  - ブランチ保護
-    - リポジトリ設定で管理者のみ実行可能
-    - マージとコミットの制限などができる
-  - 外部コラボレーター（Outside Collaborator）
-    - リポジトリ管理者によって追加
-    - リポジトリに直接こらボレーたとして指定されるため、Teamsの参加やOrganizationに依存しない
-  - Organizationの権限
-    - Owner(所有者)
-    - Member(メンバー)
-    - Moderator(モデレータ)
-    - Billing manager(支払いマネージャー)
-    - Security manager(セキュリティマネージャー)
-    - Outside collaborator(外部コラボレータ)
-  - Teamの権限
-    - メンバー(Member)
-    - メンテナ(Maintainer)
+## 6. プライバシー、セキュリティ、および管理 (10%)
+### 2FA Authentication
+- モバイルやデスクトップ、テキストメッセージで二要素認証の設定ができる
+### GitHub Enterprise Managed Users
+- ユーザはIDPで管理されるアカウント
+### GitHub Administration
+- リポジトリのロール：Organizationの機能
+  - Read
+  - Triage
+  - Write
+  - Maintain
+  - Admin
+- リポジトリの可視性
+  - Public
+  - Internal
+  - Private
+- ブランチ保護
+  - リポジトリ設定で管理者のみ実行可能
+  - マージとコミットの制限などができる
+- 外部コラボレーター（Outside Collaborator）
+  - リポジトリ管理者によって追加
+  - リポジトリに直接こらボレーたとして指定されるため、Teamsの参加やOrganizationに依存しない
+- Organizationの権限
+  - Owner(所有者)
+  - Member(メンバー)
+  - Moderator(モデレータ)
+  - Billing manager(支払いマネージャー)
+  - Security manager(セキュリティマネージャー)
+  - Outside collaborator(外部コラボレータ)
+- Teamの権限
+  - メンバー(Member)
+  - メンテナ(Maintainer)
 
-## GitHubコミュニティの利点 (10%)
-- オーブンソースソフトウェアとは
-  - 無料である＝オープンソースではない
-- GitHub Sponsors
-  - 支払い方法は、クレジットカード、Patreon、請求書払いがある
-- GitHub Marketplace
-  - GitHubの開発者エコシステム
+## 7. GitHubコミュニティの利点 (10%)
+### オーブンソースソフトウェアとは
+- 無料である＝オープンソースではない
+### GitHub Sponsors
+- 支払い方法は、クレジットカード、Patreon、請求書払いがある
+### GitHub Marketplace
+- GitHubの開発者エコシステム
