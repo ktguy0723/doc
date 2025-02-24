@@ -162,11 +162,12 @@
   - CICDやAPIの呼び出しができる
   - YAMLによる設定
 ```yaml
-# イベント：コードがプッシュされた時に実行されるワークフローをトリガー
+# イベント：トリガーを指定する
 on:
-  push:
+  push: # Pushされたら実行
       branches:
         - main
+  workflow_dispatch: # 手動で実行
 # ジョブ：buildという名前のジョブを定義
 jobs:
   build:
@@ -229,7 +230,7 @@ jobs:
 - GitHub Enterprise Managed Users
   - ユーザはIDPで管理されるアカウント
 - GitHub Administration
-  - リポジトリのロール
+  - リポジトリのロール：Organizationの機能
     - Read
     - Triage
     - Write
