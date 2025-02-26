@@ -1,9 +1,9 @@
 https://ghcertified.com/questions/
 
 - [ ] 1. GitHub アカウントの種類にはどのようなものがありますか?
-- Enterprise account
-- Organization account
 - Personal account
+- Organization account
+- Enterprise account
 
 - [ ] 2. 適応性の高いスプレッドシート、タスク ボード、ロードマップの目的を果たすものはどれですか。GitHubの問題やプルリクエストと統合され、作業を効果的に計画および追跡します。
 - GitHub Project
@@ -81,23 +81,65 @@ https://ghcertified.com/questions/
 - [ ] 23. GitHub Copilotは無料で使用できますか?
 - 認証済みの学生、教師、または人気のあるオープンソースプロジェクトのメンテナーであれば無料
 
-GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか?
-GitHub Copilot サブスクリプションをアクティブ化した後、どのようにして GitHub Copilot の使用を開始できますか?
-GitHub Codespace とは何ですか?
-リポジトリへの貢献に必要なすべてのツールと依存関係がインストールされた、事前構成された開発環境を作成できる GitHub の機能はどれですか?
-リポジトリ貢献者が Web ブラウザーから直接簡単なコード変更を行える GitHub の機能はどれですか?
-GitHub Codespace のライフサイクル フェーズにはどのようなものがありますか?
-GitHub Codespace 環境を停止した場合、コミットしていない変更を後で元に戻すことができますか?
-GitHub Codespaces ライフサイクルに関する次の記述のうち、正しいものはどれですか? 
-プロジェクトを実行するには適切なハードウェアが必要です。GitHub Codespace 環境に割り当てられる CPU コアの量をカスタマイズできますか?
-GitHub Codespaces で実行される環境をカスタマイズするにはどうすればよいですか?
-GitHub Codespace ディープリンクとは何ですか?
-GitHub で 2 要素認証を有効にすべきなのは誰ですか?
-エンタープライズ管理ユーザーとは何ですか?
-個人アカウントが所有するリポジトリのさまざまな権限レベルは何ですか?
-GitHub 組織の役割ではないのはどれですか?
-リポジトリの問題タブを無効にできますか?
-自分が所有するリポジトリの問題、Wiki、プロジェクトなどのリポジトリ機能を無効にできる場所はどこですか?
+- [ ] 24. GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか?
+- GitHub Copilot Individualは個人アカウントでのみ使用でき、GitHub Copilot Businessは組織や企業で使用されます。
+
+- [ ] 25. GitHub Copilot サブスクリプションをアクティブ化した後、どのようにして GitHub Copilot の使用を開始できますか?
+- Visual Studio CodeやJetBrainsなどのサポートされているIDEのいずれかでGitHub Copilotをセットアップし、コーディングを開始します。
+
+- [ ] 26. GitHub Codespace とは何ですか?
+- これは、リポジトリ専用に設定された事前構成済みの開発環境です。ローカル開発環境を設定しなくても、プロジェクトのコードをすぐに書き始めることができます。
+
+- [ ] 27. リポジトリへの貢献に必要なすべてのツールと依存関係がインストールされた、事前構成された開発環境を作成できる GitHub の機能はどれですか?
+- GitHub Codespaces
+
+- [ ] 28. リポジトリ貢献者が Web ブラウザーから直接簡単なコード変更を行える GitHub の機能はどれですか?
+- GitHub Codespaces
+- github.dev editor
+
+- [ ] 29. GitHub Codespace のライフサイクル フェーズにはどのようなものがありますか?
+- Create, Rebuild, Stop, Delete
+
+- [ ] 30. GitHub Codespace 環境を停止した場合、コミットしていない変更を後で元に戻すことができますか?
+- はい、これはGitHub Codespaceを停止してから起動するときのデフォルトの動作です。
+
+- [ ] 31. GitHub Codespaces ライフサイクルに関する次の記述のうち、正しいものはどれですか? 
+- Codespace のライフサイクルは、Codespace の作成時に開始され、削除時に終了します。
+- プロジェクトに加えた変更を失うことなく、Codespace を停止して再起動できます。
+- 実行中のプロセスに影響を与えることなく、アクティブな Codespace を切断して再接続できます。
+
+- [ ] 32. プロジェクトを実行するには適切なハードウェアが必要です。GitHub Codespace 環境に割り当てられる CPU コアの量をカスタマイズできますか?
+- はい、コードスペースを作成するとき、またはコードスペースを作成した後いつでも、別のマシン タイプを選択できます。
+
+- [ ] 33. GitHub Codespaces で実行される環境をカスタマイズするにはどうすればよいですか?
+- `.devcontainer/devcontainer.json`ファイルを作成する
+
+- [ ] 34. GitHub Codespace ディープリンクとは何ですか?
+- これは、新しい GitHub Codespace を作成し、特定の構成を選択できる特定の GitHub.com ページを指すリンクです
+
+- [ ] 35. GitHub で 2 要素認証を有効にすべきなのは誰ですか?
+- すべてのGitHubユーザー
+
+- [ ] 36. エンタープライズ管理ユーザー（Enterprise Managed Users）とは何ですか?
+- これは、Azure AD や Okta などの外部 ID プロバイダーからのユーザー アクセスを管理できる GitHub Enterprise 機能です
+
+- [ ] 37. 個人アカウントが所有するリポジトリのさまざまな権限レベルは何ですか?
+-  個人アカウントが所有するリポジトリには、リポジトリ所有者と共同作業者の 2 つの権限レベルがあります。
+
+- [ ] 38. GitHub Organizationの役割ではないのはどれですか?
+- Owner(所有者)
+- Member(メンバー)
+- Moderator(モデレータ)
+- Billing manager(支払いマネージャー)
+- Security manager(セキュリティマネージャー)
+- Outside collaborator(外部コラボレータ)
+
+- [ ] 39. リポジトリの問題タブ(Issue tab)を無効にできますか?
+- はい。貢献やバグレポートを受け入れない場合は、リポジトリの問題をオフにすることをお勧めします。
+
+- [ ] 40. 自分が所有するリポジトリの問題、Wiki、プロジェクトなどのリポジトリ機能を無効にできる場所はどこですか?
+- リポジトリ設定
+
 リポジトリのさまざまな可視性オプションは何ですか?
 `CODEOWNERS` ファイルの目的は何ですか?
 プルリクエストを `main` ブランチにマージする前に、ステータスチェックに合格するように強制するにはどうすればよいですか?
