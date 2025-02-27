@@ -250,7 +250,7 @@ jobs:
   - マージとコミットの制限などができる
 - 外部コラボレーター（Outside Collaborator）
   - リポジトリ管理者によって追加
-  - リポジトリに直接こらボレーたとして指定されるため、Teamsの参加やOrganizationに依存しない
+  - リポジトリに直接コラボレータとして指定されるため、Teamsの参加やOrganizationに依存しない
 - Organizationの権限
   - Owner(所有者)
   - Member(メンバー)
