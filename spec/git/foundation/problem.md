@@ -58,14 +58,14 @@ https://ghcertified.com/questions/
 - Board layout
 
 ## 問題8
-- [x] GitHub Projectに組み込まれている自動化はどれですか?
+- [x] GitHub Projectに組み込まれているステータスの自動化は何か?
 ### 解説
 - Project内の問題またはプルリクエストがクローズ→ステータス完了
 - Project内のプルリクエストがマージ→ステータス完了
 - <img src="images/8-1.png" width="400px">
 
 ## 問題9
-- [x] GitHubプロジェクトでの操作を自動化できるさまざまなオプションは何ですか?
+- [x] GitHubプロジェクトでの操作を自動化できるオプションは何ですか?
 ### 解説
 - Project workflows
   - GitHub Projects の組み込み機能で、特定の条件を満たしたときに自動でアクションを実行
@@ -120,31 +120,65 @@ https://ghcertified.com/questions/
 - <img src="images/16-1.png" width="400px">
 
 ## 問題17
-- [ ] GitHubプロジェクトのどの機能を使用すると、プロジェクトの現在のステータスと履歴の進行状況を視覚化するためのグラフとチャートを簡単に生成できますか?
+- [x] GitHubプロジェクトのどの機能を使用すると、プロジェクトの現在のステータスと履歴の進行状況を視覚化するためのグラフとチャートを簡単に生成できますか?
 ### 解説
 - Project Insights
+  - Project Insightsは、GitHub Projects 内でプロジェクトの進捗やタスクの状態を可視化するための機能
+  - グラフやチャートを自動生成し、現在の状態や過去の履歴を簡単に確認できる
+  - <img src="images/17-1.png" width="400px">
 
-- [ ] 18. GitHubの継続的インテグレーションおよび継続的デリバリー (CI/CD) プラットフォームの名前は何ですか?
+## 問題18
+- [x] GitHubの継続的インテグレーションおよび継続的デリバリー (CI/CD) プラットフォームの名前は何ですか?
+### 解説
 - GitHub Actions
+  - `/.github/workflows/`に`.yml`ファイルとしてワークフローの設定ファイルが格納される
 
-- [ ] 19. 次のどれがGitHub Actionsの一般的な使用例ですか?
+## 問題19
+- [x] GitHub Actionsの一般的な使用例は何か?
+### 解説
 - プルリクエストをマージする前に自動テストを実行する
 
-- [ ] 20. GitHub Action ワークフローはイベントによってトリガーされます。次のどれが GitHub Actions がサポートする有効なイベントですか?
-- コミットがブランチにプッシュされた時
-- プルリクエストが開かれた時
+## 問題20
+- [x] GitHub Action ワークフローはイベントによってトリガーされます。GitHub Actions がサポートする主要なイベントは何か?(2つ)
+### 解説
+- コミットがブランチにプッシュされた
+- プルリクエストが開かれた
+- https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
 
-- [ ] 21. 公開されている GitHub Actions はどこにありますか?
+## 問題21
+- [x] 公開されている GitHub Actions はどこにありますか?
+### 解説
 - GitHub Marketplace
+  - 左上のアイコン > Marcketplaceからアクセスできる
+  - <img src="images/21-1.png" width="400px">
 
-- [ ] 22. 次のツールのうち、コード入力時にオートコンプリートスタイルの提案を提供するAIペアプログラマーとして機能するものはどれですか?
+## 問題22
+- [x] 次のツールのうち、コード入力時にオートコンプリートスタイルの提案を提供するAIペアプログラマーとして機能するものはどれですか?
+### 解説
 - GitHub Copilot
+  - VSCodeで使用する場合は`GitHub Copilot`拡張機能をインストールする
+  - <img src="images/22-1.png" width="400px">
+  - 利用状況や利用プランはsettingsから確認可能
+  - <img src="images/22-2.png" width="400px">
 
-- [ ] 23. GitHub Copilotは無料で使用できますか?
+## 問題23
+- [x] GitHub Copilotは無料で使用できますか?
+### 解説
 - 認証済みの学生、教師、または人気のあるオープンソースプロジェクトのメンテナーであれば無料
+- 無料プランは、1か月あたり 2,000 回のコード補完と 50 件のチャットメッセージに制限
 
-- [ ] 24. GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか?
-- GitHub Copilot Individualは個人アカウントでのみ使用でき、GitHub Copilot Businessは組織や企業で使用されます。
+## 問題24
+- [x] GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか?
+### 解説
+- GitHub Copilot Individual:
+  - 個人アカウント向けのプラン
+  - 個人ユーザーが VS Code や JetBrains などで AI 補完を利用可能
+  - 価格: $10/月（または $100/年）（学生・教育者・OSSメンテナーは無料）
+- GitHub Copilot Business:
+  - 企業や組織向けのプラン
+  - 組織内のメンバーが Copilot を利用できるようにライセンス管理可能
+  - 価格: $19/ユーザー/月
+  - データの取り扱いが異なり、企業のコードを学習データとして利用しない（セキュリティ面での配慮）。
 
 - [ ] 25. GitHub Copilot サブスクリプションをアクティブ化した後、どのようにして GitHub Copilot の使用を開始できますか?
 - Visual Studio CodeやJetBrainsなどのサポートされているIDEのいずれかでGitHub Copilotをセットアップし、コーディングを開始します。
