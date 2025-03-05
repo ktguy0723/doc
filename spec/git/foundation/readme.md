@@ -18,7 +18,7 @@ https://ghcertified.com/questions/
   - GitHub Enterprise Cloud や GitHub Enterprise Server を利用できる
 
 ## 問題2
-- [x] 適応性の高いスプレッドシート、タスク ボード、ロードマップの目的を果たすものはどれですか。GitHubの問題やプルリクエストと統合され、作業を効果的に計画および追跡します。
+- [x] GitHub のイシューやプルリクエストと統合し、作業の計画や追跡を効果的に行うための 柔軟なスプレッドシート、タスクボード、ロードマップ の機能を提供するものは？
 ### 解説
 - GitHub Project
   - 従来の Projects (Classic) から進化し、より柔軟にタスク管理ができる
@@ -31,64 +31,70 @@ https://ghcertified.com/questions/
 - IssueやPull Requestの更新はGitHub Projectsに自動的に反映され、逆方向の同期も行われる。
 
 ## 問題4
-- [x] GitHubプロジェクトの「カスタムフィールドの追加」の際に見られる特徴は?
+- [ ] GitHubプロジェクトの「カスタムフィールドの追加」の際に見られる特徴は?
 ### 解説
-- ターゲット日付やイテレーションなど、***組み込みオプション以外のメタデータを追加***できる
+- カスタムフィールドを使用すると、ターゲット日付やイテレーションフィールドなど、**組み込みオプション以外のメタデータ**を追加できます
+  - GitHub Projects では、カスタムフィールドを使用して独自のメタデータ（例：ターゲット日、数値、ステータス、ラベルなど）を追加 できる
+  - プロジェクト管理をより柔軟にカスタマイズし、組織のワークフローに適したトラッキングが可能 になる
+  - 単なる見た目の変更ではなく、**実際にデータとして利用可能な情報を追加できる**ため、より詳細な管理が可能
 
 ## 問題5
-- [x] GitHubプロジェクトボードに問題やプルリクエストを追加するために使用できるさまざまなオプションは何ですか?
+- [x] GitHubプロジェクトボードにイシューやプルリクエストを追加する方法は何がある？
 ### 解説
-- 個別・・・必要な Issue や Pull Request を手動で選択し、プロジェクトに追加
-- 自動・・・プロジェクトワークフロー を設定すると、特定の条件を満たす Issue や Pull Request を自動でプロジェクトに追加
-- 一括・・・複数の Issue や Pull Request を 一括選択して追加
+- **個別追加**・・・必要な Issue や Pull Request を手動で選択し、プロジェクトに追加
+- **一括追加**・・・複数の Issue や Pull Request を 一括選択して追加
+- **自動追加**・・・プロジェクトワークフロー を設定すると、特定の条件を満たす Issue や Pull Request を自動でプロジェクトに追加
 
 ## 問題6
 - [x] GitHub Projectで使用できるレイアウトはどれですか?
 ### 解説
-- Table layout
+- **Table layout**
   - <img src="images/6-1.png" width="400px" title="キャプションテキスト">
-- Board layout
+- **Board layout**
   - <img src="images/6-2.png" width="400px" title="キャプションテキスト">
-- Roadmap layout
+- **Roadmap layout**
   - <img src="images/6-3.png" width="400px" title="キャプションテキスト">
 
 ## 問題7
 - [x] どのGitHub Projectレイアウトがカンバンボードとして最適ですか?
 ### 解説
-- Board layout
+- **Board layout**
 
 ## 問題8
-- [x] GitHub Projectに組み込まれているステータスの自動化は何か?
+- [ ] GitHub Projectに組み込まれているステータスの自動化は何か?
 ### 解説
-- Project内の問題またはプルリクエストがクローズ→ステータス完了
-- Project内のプルリクエストがマージ→ステータス完了
+- Project内の**イシューまたはプルリクエストがクローズ**→ステータス完了
+- Project内の**プルリクエストがマージ**→ステータス完了
 - <img src="images/8-1.png" width="400px">
 
 ## 問題9
-- [x] GitHubプロジェクトでの操作を自動化できるオプションは何ですか?
+- [ ] GitHubプロジェクトでの操作を自動化できるオプションは何ですか?
 ### 解説
-- Project workflows
+- **Project workflows**
   - GitHub Projects の組み込み機能で、特定の条件を満たしたときに自動でアクションを実行
-- GitHub Actions
+- **GitHub Actions**
   - GitHub の CI/CD 自動化ツールを使って、プロジェクトのワークフローをさらに拡張できる
-- GitHub GraphQL API (API連携)
+  - `.github/workflows/xxxx.yml`に実行ファイルを格納
+  - <img src="images/9-1.png" width="400px">
+
+- **GitHub GraphQL API (API連携)**
   - API を使ってプログラムでプロジェクトを操作できる
 
 ## 問題10
-- [x] GitHubプロジェクトと GitHubプロジェクトクラシックの違いは?
+- [ ] GitHubプロジェクトと GitHubプロジェクトクラシックの違いは?
 ### 解説
 - **GitHub Projectsは、**新しいGitHubのプロジェクト管理機能であり、従来の GitHub Projects classic に比べて**多くの新機能や改善が提供**されている
   - GitHub Projectsは、より柔軟なカスタマイズが可能な 「ボード + データベース」 のようなシステムを採用しており、カラム（列）に自由なフィールドを追加できるなどの強化がなされている
   - 一方、GitHub Projects classic は、従来のカンバンスタイルのプロジェクト管理機能で、「マイルストーン」「カードの移動」「ラベル管理」 などの基本機能を持つが、新しい GitHub Projects に比べると柔軟性が低い
 
 ## 問題11
-- [x] ラベルの使用例は何ですか?
+- [ ] ラベルの使用例は何ですか?
 ### 解説
 - **イシュー、プルリクエスト、ディスカッションの分類**
 - <img src="images/11-1.png" width="400px">
 
 ## 問題12
-- [x] リポジトリ所有者がマイルストーンを使用する理由は?
+- [ ] リポジトリ所有者がマイルストーンを使用する理由は?
 ### 解説
 - **課題（Issue）やプルリクエスト（Pull Request）を特定のプロジェクトフェーズと関連付ける**ため
   - マイルストーン（Milestone）は、特定の目標やフェーズに関連する Issue や Pull Request をまとめる機能であり、進捗管理に役立つ
@@ -98,33 +104,33 @@ https://ghcertified.com/questions/
 <img src="images/12-1.png" width="400px">
 
 ## 問題13
-- [x] イシューまたはプルリクエストに人を割り当てるにはどうすればよいですか?
+- [ ] イシューまたはプルリクエストに人を割り当てるにはどうすればよいですか?
 ### 解説
 - サイドバーの担当者フィールドを使用する
 - <img src="images/13-1.png" width="400px">
 
 ## 問題14
-- [x] イシューまたはプルリクエストに同じコメントセットを頻繁に書き込む場合、時間を節約するためにどのGitHub機能を使用しますか?
+- [ ] イシューまたはプルリクエストに同じコメントセットを頻繁に書き込む場合、時間を節約するためにどのGitHub機能を使用しますか?
 ### 解説
 - 返信テンプレート
 - users > settingsから作成できる
 - <img src="images/14-1.png" width="400px">
 
 ## 問題15
-- [x] 「保存された返信」はどこで作成され、どこで利用できるか?
+- [ ] 「保存された返信」はどこで作成され、どこで利用できるか?
 ### 解説
 - 保存された返信は、GitHub アカウント設定の [保存された返信] セクションで作成、編集、削除できる
 - 保存された返信は、イシューやプルリクエストで再利用できる
 
 ## 問題16
-- [x] リポジトリテンプレートに関して実行できるアクションにはどのようなものがありますか?
+- [ ] リポジトリテンプレートに関して実行できるアクションにはどのようなものがありますか?
 ### 解説
 - リポジトリテンプレートから**新しいリポジトリを作成**する
 - 既存のリポジトリから**リポジトリテンプレートを作成**する
 - <img src="images/16-1.png" width="400px">
 
 ## 問題17
-- [x] GitHubプロジェクトのどの機能を使用すると、プロジェクトの現在のステータスと履歴の進行状況を視覚化するためのグラフとチャートを簡単に生成できますか?
+- [ ] GitHubプロジェクトのどの機能を使用すると、プロジェクトの現在のステータスと履歴の進行状況を視覚化するためのグラフとチャートを簡単に生成できますか?
 ### 解説
 - Project Insights
   - Project Insightsは、GitHub Projects 内でプロジェクトの進捗やタスクの状態を可視化するための機能
@@ -132,18 +138,18 @@ https://ghcertified.com/questions/
   - <img src="images/17-1.png" width="400px">
 
 ## 問題18
-- [x] GitHubの継続的インテグレーションおよび継続的デリバリー (CI/CD) プラットフォームの名前は何ですか?
+- [ ] GitHubの継続的インテグレーションおよび継続的デリバリー (CI/CD) プラットフォームの名前は何ですか?
 ### 解説
 - GitHub Actions
   - `/.github/workflows/`に`.yml`ファイルとしてワークフローの設定ファイルが格納される
 
 ## 問題19
-- [x] GitHub Actionsの一般的な使用例は何か?
+- [ ] GitHub Actionsの一般的な使用例は何か?
 ### 解説
 - プルリクエストをマージする前に自動テストを実行する
 
 ## 問題20
-- [x] GitHub Action ワークフローはイベントによってトリガーされます。GitHub Actions がサポートする主要なイベントは何か?(2つ)
+- [ ] GitHub Action ワークフローはイベントによってトリガーされます。GitHub Actions がサポートする主要なイベントは何か?(2つ)
 ### 解説
 - **プルリクエスト（Pull Request）がOpenしたとき(作成、変更、マージ)**
   - pull_request イベントは、GitHub Actions のワークフローをトリガーする代表的なイベントの一つ
@@ -154,14 +160,14 @@ https://ghcertified.com/questions/
 - https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#about-events-that-trigger-workflows
 
 ## 問題21
-- [x] 公開されている GitHub Actions はどこにありますか?
+- [ ] 公開されている GitHub Actions はどこにありますか?
 ### 解説
 - GitHub Marketplace
   - 左上のアイコン > Marcketplaceからアクセスできる
   - <img src="images/21-1.png" width="400px">
 
 ## 問題22
-- [x] 次のツールのうち、コード入力時にオートコンプリートスタイルの提案を提供するAIペアプログラマーとして機能するものはどれですか?
+- [ ] 次のツールのうち、コード入力時にオートコンプリートスタイルの提案を提供するAIペアプログラマーとして機能するものはどれですか?
 ### 解説
 - GitHub Copilot
   - VSCodeで使用する場合は`GitHub Copilot`拡張機能をインストールする
@@ -170,13 +176,13 @@ https://ghcertified.com/questions/
   - <img src="images/22-2.png" width="400px">
 
 ## 問題23
-- [x] GitHub Copilotは無料で使用できますか?
+- [ ] GitHub Copilotは無料で使用できますか?
 ### 解説
 - 認証済みの学生、教師、または人気のあるオープンソースプロジェクトのメンテナーであれば無料
 - 無料プランは、1か月あたり 2,000 回のコード補完と 50 件のチャットメッセージに制限
 
 ## 問題24
-- [x] GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか?
+- [ ] GitHub Copilot IndividualとGitHub Copilot Businessの違いは何ですか?
 ### 解説
 - GitHub Copilot Individual:
   - 個人アカウント向けのプラン
@@ -189,25 +195,25 @@ https://ghcertified.com/questions/
   - データの取り扱いが異なり、企業のコードを学習データとして利用しない（セキュリティ面での配慮）。
 
 ## 問題25
-- [x] GitHub Copilotサブスクリプションをアクティブ化した後、どのようにして GitHub Copilot の使用を開始できますか?
+- [ ] GitHub Copilotサブスクリプションをアクティブ化した後、どのようにして GitHub Copilot の使用を開始できますか?
 ### 解説
 - Visual Studio CodeやJetBrainsなどのサポートされているIDEのいずれかでGitHub Copilotをセットアップし、コーディングを開始
 
 ## 問題26
-- [x] GitHub Codespace とは何ですか?
+- [ ] GitHub Codespace とは何ですか?
 ### 解説
 - リポジトリ専用に設定された事前構成済みの開発環境
 - ローカル開発環境を設定しなくても、プロジェクトのコードをすぐに書き始めることができる
 - <img src="images/26-1.png" width="400px">
 
 ## 問題27
-- [x] リポジトリへの貢献に必要なすべてのツールと依存関係がインストールされた、事前構成された開発環境を作成できる GitHubの機能はどれですか?
+- [ ] リポジトリへの貢献に必要なすべてのツールと依存関係がインストールされた、事前構成された開発環境を作成できる GitHubの機能はどれですか?
 ### 解説
 - GitHub Codespaces
   - 開発者がすぐにコーディングを開始できる「事前構成された開発環境」を提供する機能
 
 ## 問題28
-- [x] リポジトリ貢献者が Web ブラウザーから直接簡単なコード変更を行える GitHub の機能はどれですか?
+- [ ] リポジトリ貢献者が Web ブラウザーから直接簡単なコード変更を行える GitHub の機能はどれですか?
 ### 解説
 - GitHub Codespaces
   - クラウドベースの VS Code 環境で、より高度なコード編集が可能
@@ -228,7 +234,7 @@ https://ghcertified.com/questions/
 - https://dev.to/learnwithsrini/code-with-github-codespaces-4hbh
 
 ## 問題30
-- [x] GitHub Codespace 環境を停止した場合、コミットしていない変更を後で元に戻すことができますか?
+- [ ] GitHub Codespace 環境を停止した場合、コミットしていない変更を後で元に戻すことができますか?
 ### 解説
 - はい、これはGitHub Codespaceを停止してから起動するときのデフォルトの動作です。
   - GitHub Codespaces では、環境を停止しても未コミットの変更は保持される
@@ -237,7 +243,7 @@ https://ghcertified.com/questions/
   - ただし、一定期間経過すると Codespace が削除される可能性があるので、重要な変更は適切にコミットしておくのがベスト
 
 ## 問題31
-- [x] GitHub Codespaces ライフサイクルに関する以下の質問に答えよ
+- [ ] GitHub Codespaces ライフサイクルに関する以下の質問に答えよ
   - 停止・再開した場合、プロジェクトの変更はどうなるか？
   - ライフサイクルはいつ始まり、いつ終了するか？
   - ネットワークやブラウザを閉じると、Codespaceはどうなるか？
@@ -250,7 +256,7 @@ https://ghcertified.com/questions/
   - ネットワークの切断やブラウザの閉じても、Codespace はバックグラウンドで動作し続けるため、プロセスは中断されない
 
 ## 問題32
-- [x] GitHub Codespace 環境に割り当てられる CPU コアの量をカスタマイズできますか?
+- [ ] GitHub Codespace 環境に割り当てられる CPU コアの量をカスタマイズできますか?
 ### 解説
 - はい、コードスペースを作成するとき、またはコードスペースを作成した後いつでも、別のマシン タイプを選択できます。
   - GitHub Codespaces では、作成時または作成後に使用するマシンタイプを変更可能
@@ -261,13 +267,13 @@ https://ghcertified.com/questions/
   - <img src="images/32-1.png" width="500px"> 
 
 ## 問題33
-- [x] GitHub Codespaces で実行される環境をカスタマイズするにはどうすればよいですか?
+- [ ] GitHub Codespaces で実行される環境をカスタマイズするにはどうすればよいですか?
 ### 解説
 - `.devcontainer/devcontainer.json`ファイルを作成する
 - <img src="images/33-1.png" width="500px"> 
 
 ## 問題34
-- [x] GitHub Codespace ディープリンクとは何ですか?
+- [ ] GitHub Codespace ディープリンクとは何ですか?
 ### 解説
 - 新しい GitHub Codespace を作成し、特定の構成を選択できる特定の GitHub.com ページを指すリンク
   - <img src="images/34-1.png" width="500px"> 
@@ -276,14 +282,14 @@ https://ghcertified.com/questions/
   - 例えば、あるリポジトリの特定のブランチを開く Codespace Deep Link を作成できる。
 
 ## 問題35
-- [x] GitHub で 2 要素認証（2FA：Two-Factor Authentication）を有効にすべきなのは誰ですか?
+- [ ] GitHub で 2 要素認証（2FA：Two-Factor Authentication）を有効にすべきなのは誰ですか?
 ### 解説
 - **すべてのGitHubユーザー**
 - ユーザのSettings から二要素認証の設定ができる
 - <img src="images/35-1.png" width="500px"> 
 
 ## 問題36
-- [x] エンタープライズ管理ユーザー（Enterprise Managed Users: EMU）とは何ですか?
+- [ ] エンタープライズ管理ユーザー（Enterprise Managed Users: EMU）とは何ですか?
 ### 解説
 - Azure AD や Okta などの外部 ID プロバイダーからのユーザーアクセスを管理できる GitHub Enterprise 機能
   - Enterprise Managed Users（EMU）は、**GitHub Enterprise Cloud**の機能
@@ -292,7 +298,7 @@ https://ghcertified.com/questions/
   - **GitHubではアカウントの作成や管理を行わず**、すべての管理が IdP で行われる。
 
 ## 問題37
-- [x] 個人アカウントが所有するリポジトリのさまざまな権限レベルは何ですか?
+- [ ] 個人アカウントが所有するリポジトリのさまざまな権限レベルは何ですか?
 ### 解説
 -  個人アカウントが所有するリポジトリには、リポジトリ所有者とコラボレータの 2 つの権限レベルがあります。
 - repository owner(リポジトリ所有者)
@@ -309,7 +315,7 @@ https://ghcertified.com/questions/
     - 例えば、フォークしたリポジトリからプルリクエストを送った人は、コラボレーターには含まれない
 
 ## 問題38
-- [x] GitHub Organizationの役割（ロール）は？（6ロール）
+- [ ] GitHub Organizationの役割（ロール）は？（6ロール）
 ### 解説
 - Organizationレベルのロールは以下の通り
   - Owner(所有者)
@@ -322,7 +328,7 @@ https://ghcertified.com/questions/
 - https://docs.github.com/ja/organizations/managing-peoples-access-to-your-organization-with-roles/roles-in-an-organization#permissions-for-organization-roles
 
 ## 問題39
-- [x] リポジトリのイシュータブ(Issue tab)を無効にできますか?
+- [ ] リポジトリのイシュータブ(Issue tab)を無効にできますか?
 ### 解説
 - はい
   - 貢献やバグレポートを受け入れない場合は、リポジトリのイシューをオフにすることをお勧めします
@@ -471,7 +477,7 @@ https://ghcertified.com/questions/
   - これは Open Source Initiative (OSI) によって定められたオープンソースの定義にも合致する
 
 ## 問題55
-- [x] GitHub Sponsors プログラムとは何ですか?
+- [ ] GitHub Sponsors プログラムとは何ですか?
 ### 解説
 - オープンソースプロジェクトの開発者を経済的に支援する方法
   - 個人や企業は、特定の開発者やプロジェクトに定期的な寄付を行うことができる
