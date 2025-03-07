@@ -1,4 +1,6 @@
-https://ghcertified.com/questions/
+## GitHub Foundations Exam passed with a grade of 80%
+<img src="images/pass.png" width="600px" title="キャプションテキスト">
+
 
 ## 問題1 
 - [x] GitHubアカウントの種類（3種類）
